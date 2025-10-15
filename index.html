@@ -130,6 +130,13 @@
           </a>
         </div>
       </div>
+      <!-- صوت الأزرار  -->
+<audio id="clickSound" src="click1.mp3" preload="auto"></audio>
+<script>
+  const sound = document.getElementById("clickSound");
+  document.querySelectorAll("a").forEach(btn =>
+    btn.addEventListener("click", () => sound.play())
+  );
     </div>
   </body>
 </html>
